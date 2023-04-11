@@ -31,7 +31,7 @@ app.post('/git', (req, res) => {
 });
 
 app.get('/', (req,res) => {
-    res.send('Hola mundo 6')
+    res.send('Hola mundo 7')
 })
 
 const PORT = process.env.PORT || 8080
