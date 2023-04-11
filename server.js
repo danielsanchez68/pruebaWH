@@ -3,6 +3,7 @@ const crypto = require('crypto');
 const { execSync } = require('child_process');
 
 const app = express()
+app.use(express.json())
 
 console.log(process.env.SECRET)
 
@@ -30,7 +31,7 @@ app.post('/git', (req, res) => {
 });
 
 app.get('/', (req,res) => {
-    res.send('Hola mundo 4')
+    res.send('Hola mundo 6')
 })
 
 const PORT = process.env.PORT || 8080
