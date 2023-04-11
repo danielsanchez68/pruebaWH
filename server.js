@@ -4,6 +4,7 @@ const { execSync } = require('child_process');
 
 const app = express()
 
+console.log(process.env.SECRET)
 
 app.post('/git', (req, res) => {
   const hmac = crypto.createHmac('sha1', process.env.SECRET);
